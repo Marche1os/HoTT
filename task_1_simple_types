@@ -1,0 +1,9 @@
+### Sum type
+
+```kotlin
+//1.
+sealed interface Out
+
+data class Error(error:Throwable, msg:String):Out
+data class Success<T>(data:T):Out
+```
